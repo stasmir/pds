@@ -1,14 +1,29 @@
 <!DOCTYPE html>
 <html>
- <head>
-  <meta charset="utf-8">
-  <title>Letters colorizer</title>
-  <style>
-  p { color:  navy; }
-  </style>
- </head>
- <body>
-  <p>Страница на HTML5</p>
- </body>
- <script src="letterscolorizer.js" />
+
+<head>
+    <meta charset="utf-8">
+    <title>Letters colorizer</title>
+    <style>
+        p {
+            color: navy;
+        }
+    </style>
+</head>
+
+<body>
+    <p id="textForColorize">I’d like to color a paragraph of text into random colors (not ordered in a particular way). List of colors needs to be
+        entered by the user with appropriate input validation and stored in array. Two neighboring letters should not have
+        the same color.</p>
+
+    <div>
+        <label for="inputColors">Enter colors:</label>
+        <textarea id="inputColors" cols="30" rows="10"></textarea>
+    </div>
+
+    <input id="colorizeButton" type="button" value="Colorize text" />
+
+    <script src="letterscolorizer.js"></script>
+</body>
+
 </html>
