@@ -4,11 +4,7 @@
 <head>
     <meta charset="utf-8">
     <title>Letters colorizer</title>
-    <style>
-        p {
-            color: navy;
-        }
-    </style>
+    <link rel="stylesheet" href="site.css"></style>
 </head>
 
 <body>
@@ -18,10 +14,14 @@
 
     <div>
         <label for="inputColors">Enter colors:</label>
+    </div>
+    <div>
         <textarea id="inputColors" cols="30" rows="10"></textarea>
     </div>
-
-    <input id="colorizeButton" type="button" value="Colorize text" />
+    <div>
+        <input id="colorizeButton" type="button" value="Colorize text" />
+    </div>
+    <span id="errorMessage" class="error"></span>
 
     <script src="letterscolorizer.js"></script>
 </body>
